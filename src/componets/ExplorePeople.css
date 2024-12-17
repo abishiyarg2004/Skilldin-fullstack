@@ -1,0 +1,104 @@
+.explore-people-page {
+    position: relative;
+    color: black;
+  }
+  
+  .people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Changed to make grid cells smaller */
+    gap: 10px;
+    justify-items: center;
+   color: black;
+  }
+  
+  .user-card {
+    border: 1px solid #a89797;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: white;
+    height: 300px;
+    width: 400px;
+  }
+  p{
+    color: #000;
+  }
+  .user-card img {
+    width: 100px;  /* Reduced width to 100px for circular image */
+    height: 100px;  /* Reduced height to 100px for circular image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 10px; /* Adds space between the image and the name */
+  }
+  
+  .user-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .user-details-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .user-profile {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 800px;
+    height: 600px;
+    text-align: center;
+  }
+  
+  .blurred-background {
+    position: relative;
+    /* background: white; */
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 80vh;
+  }
+  
+  .user-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  
+  .user-post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .user-post img {
+    width: 100px; /* Adjust the size of post images */
+    height: 100px;
+    border-radius: 50%; /* Make post images circular */
+    object-fit: cover;
+  }
+  
+  .back-button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .profile-image {
+    width: 150px;  /* Set the width for the profile image */
+    height: 150px;  /* Set the height for the profile image */
+    object-fit: cover;  /* Ensures the image doesn't stretch */
+    border-radius: 50%;  /* Makes the image circular */
+    margin-bottom: 20px;  /* Adds some space below the image */
+  }
+  

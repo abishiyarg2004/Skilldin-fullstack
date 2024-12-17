@@ -1,0 +1,102 @@
+
+
+.skills-container {
+    padding: 2rem;
+    background-color: #ffffff; 
+    color: #e0e0e0; 
+    text-align: center;
+}
+
+.skills-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ffd740; 
+    transition: color 0.3s ease; 
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem; 
+    margin-top: 1rem;
+}
+
+.skill-card {
+    background-color: #1e1e1e; 
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.skill-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(255, 252, 252, 0.5); 
+}
+
+.skill-image {
+    width: 200px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px 8px 0 0; 
+    transition: transform 0.3s ease; 
+}
+
+.skill-card:hover .skill-image {
+    transform: scale(1.05); 
+}
+
+.skill-card h2 {
+    font-size: 1.5rem; 
+    color: #ffab00; 
+    margin: 1rem 0;
+}
+
+.skill-card p {
+    color: #b0bec5;
+    margin-bottom: 40px; 
+}
+
+
+.skill-button {
+    margin-top: 50px;
+    background-color: #6200ea; 
+    color: #ffffff; 
+    border: 2px solid #ffffff; 
+    padding: 1rem 2rem; 
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem; 
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+
+.skill-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px; 
+    background: rgba(255, 255, 255, 0.1); 
+    transform: scale(0); 
+    transition: transform 0.3s ease; 
+}
+
+.skill-button:hover::after {
+    transform: scale(1); 
+}
+
+.skill-button:hover {
+    background-color: #3700b3; 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.skill-button:active {
+    transform: translateY(0); 
+}

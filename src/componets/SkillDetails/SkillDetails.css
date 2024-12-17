@@ -1,0 +1,154 @@
+
+/* body {
+    background-color: #fafafa; 
+    font-family: 'Roboto', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+} */
+
+.skill-detail-container {
+    max-width: 1500px; 
+    margin: 30px auto; 
+    padding: 25px; 
+    border-radius: 16px; 
+    background-color: #2a2a2a; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeInUp 0.5s forwards; 
+    width: 100%; 
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skill-detail-container:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.8); 
+}
+
+.chart-container {
+    margin-bottom: 20px; 
+    align-self: flex-start; 
+    width: 100%; 
+}
+
+.skill-detail-image {
+    width: 600px;
+    height: 400px; 
+    border-radius: 16px; 
+    object-fit: cover;
+    margin-bottom: 20px; 
+    border: 1px solid #444; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+/* Create the crimson moving border effect */
+.skill-detail-image::before {
+    content: '';
+    position: absolute;
+    top: -5px; /* Start slightly above */
+    left: -5px; /* Start slightly to the left */
+    right: -5px; /* Extend to the right */
+    bottom: -5px; /* Extend downwards */
+    border: 3px solid transparent; /* Start with transparent border */
+    border-radius: 16px; /* Match the image's border radius */
+    transition: border-color 0.4s ease; /* Smooth transition for the border color */
+    z-index: 1; /* Position it below the image */
+}
+
+.skill-detail-image:hover::before {
+    border-color: crimson; /* Change to crimson on hover */
+    animation: moveBorder 1s linear infinite; /* Animate the border movement */
+}
+
+/* Animation for the moving border */
+@keyframes moveBorder {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(5px, 0);
+    }
+    50% {
+        transform: translate(5px, 5px);
+    }
+    75% {
+        transform: translate(0, 5px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+h1 {
+    color: #f1f1f1; /* Light color for main heading */
+    margin-bottom: 15px; /* Space below the title */
+    font-size: 24px; /* Font size for the title */
+}
+
+h3 {
+    color: #f1f1f1; /* Light color for subheadings */
+    margin-bottom: 10px; /* Consistent spacing below headings */
+    font-size: 20px; /* Slightly larger subheading */
+    border-bottom: 2px solid #ff4757; /* Red accent line for modern touch */
+    padding-bottom: 5px; /* Space between text and border */
+}
+
+p {
+    color: #d1d1d1; /* Light gray for body text */
+    line-height: 1.6; /* Improved line height for readability */
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+.back-button {
+    margin-top: 20px; /* Space above the button */
+    padding: 12px 20px; /* Padding for the button */
+    background-color: #ff4757; /* Primary red color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 6px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for better visibility */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    display: inline-block; /* Align with the text */
+    text-align: center; /* Center align text within the button */
+    width: 100%; /* Full width button for easy click */
+    animation: buttonAnimation 0.5s ease; /* Button entrance animation */
+}
+
+@keyframes buttonAnimation {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.back-button:hover {
+    background-color: #e84118; /* Darker red on hover */
+    transform: translateY(-1px); /* Slight lift effect on hover */
+}
+
+@media (max-width: 600px) {
+    .skill-detail-container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .back-button {
+        width: 100%; /* Full width for the button on small screens */
+    }
+}

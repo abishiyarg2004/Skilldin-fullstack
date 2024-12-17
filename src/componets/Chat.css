@@ -1,0 +1,124 @@
+.chat-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .designation-select {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .designation-select select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .messages {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message-box {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #e9f0ff;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .designation-tag {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    padding: 3px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  .designation-tag.mentor {
+    background-color: #28a745;
+  }
+  
+  .designation-tag.skilled-individual {
+    background-color: #ffc107;
+  }
+  
+  .designation-tag.potential-customer {
+    background-color: #17a2b8;
+  }
+  
+  .message {
+    margin-bottom: 5px;
+    word-wrap: break-word;
+  }
+  
+  .message-actions {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  
+  .like-btn, .dislike-btn {
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .input-area {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .input-area input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .input-area button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .input-area button:hover {
+    background-color: #0056b3;
+  }
+  
+  .emoji-panel {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .emoji-panel span {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 5px;
+  }
+  

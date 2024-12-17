@@ -1,0 +1,73 @@
+/* Main navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Logo or brand name */
+  .navbar h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Search bar styling */
+  .navbar input {
+    width: 500px;
+    padding: 2px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 16px;
+    margin-left: 190px;
+    margin-top: 10px;
+    /* margin-right: 100px; */
+  }
+  
+  .navbar input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Links and buttons */
+  .nav-links {
+    display: flex;
+    gap: 10px;
+    margin-right: 100px;
+    width: 1900px;
+  }
+  
+  .nav-links button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .nav-links button:hover {
+    background-color: #0073b1;
+  }
+  
+  /* Responsive design: smaller screens */
+  @media (max-width: 768px) {
+    .navbar input {
+      width: 60%;
+    }
+  
+    .nav-links button {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  }
+  

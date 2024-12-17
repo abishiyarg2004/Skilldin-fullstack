@@ -1,0 +1,106 @@
+/* Main Job Board Container */
+.job-board-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f4f7f6;
+ height: 400px; /* Ensure full height */
+}
+
+.job-board-content {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+/* Job Listing Grid */
+.job-listing-grid {
+  flex: 2; /* Job posts take more space */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* More flexibility */
+  grid-gap: 20px;
+}
+
+/* Individual Job Post Styling */
+.job-post {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.job-post:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.job-post h3 {
+  background-color: #007bff; /* Blue heading background */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.job-post p {
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Job Posting Form on the Right */
+.job-posting-form {
+  flex: 1;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.job-posting-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  background-color: #28a745; /* Green header */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.job-posting-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-posting-form input,
+.job-posting-form textarea,
+.job-posting-form select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.job-posting-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.job-posting-form button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.job-posting-form button:hover {
+  background-color: #218838;
+}
